@@ -1,5 +1,11 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+define('ROOT', __DIR__);
 
-echo '<h1>Hello</h1>';
+require_once ROOT . '/vendor/autoload.php';
+
+use App\App;
+
+$app = new App();
+
+$app->run(); 
