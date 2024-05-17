@@ -1,10 +1,12 @@
 <?php
 
+use App\Router\Route;
+
 return [
-   '/ecommerce-dashboard/home' => function() {
+   Route::get('/ecommerce-dashboard/home', function() {
       include_once ROOT . '/views/pages/home.php';
-   },
-   '/ecommerce-dashboard/overview' => function() {
+   }),
+   Route::get('/ecommerce-dashboard/overview', function() {
       include_once ROOT . '/views/pages/overview.php';
-   },
+   }),
 ];
