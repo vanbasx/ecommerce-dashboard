@@ -1,7 +1,7 @@
 <div class="grid gap-5 grid-cols-3 max-[835px]:grid-cols-2 max-[541px]:grid-cols-1">
    <!-- ================== -->
    <div class="p-6 flex justify-between bg-white border-[1px] border-[#DFEAF2] rounded-[8px] max-[835px]:col-span-2 max-[541px]:col-span-1">
-      <div class="">
+      <div>
          <p class="pb-4 text-[16px] font-medium">Total Revenue</p>
          <p class="text-[24px] font-bold">$538.00</p>
       </div>
@@ -9,7 +9,7 @@
    </div>
    <!-- ================== -->
    <div class="p-6 flex justify-between bg-white border-[1px] border-[#DFEAF2] rounded-[8px]">
-      <div class="">
+      <div>
          <p class="pb-4 text-[16px] font-medium">Sales</p>
          <p class="text-[24px] font-bold">+2</p>
       </div>
@@ -17,7 +17,7 @@
    </div>
    <!-- ================== -->
    <div class="p-6 flex justify-between bg-white border-[1px] border-[#DFEAF2] rounded-[8px]">
-      <div class="">
+      <div>
          <p class="pb-4 text-[16px] font-medium">Product In Stock</p>
          <p class="text-[24px] font-bold">8</p>
       </div>
