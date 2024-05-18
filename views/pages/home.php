@@ -3,7 +3,7 @@ $page_title = "Home";
 include_once ROOT . '/views/includes/headers/store-header.php';
 ?>
 
-<div class="py-12">
+<div class="pb-12">
    <?php
    include_once ROOT . '/views/includes/banner.php';
    ?>

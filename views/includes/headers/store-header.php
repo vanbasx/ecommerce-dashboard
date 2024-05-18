@@ -9,13 +9,13 @@
 </head>
 <body style="font-family: 'Poppins', sans-serif;" class="tracking-tighter h-full">
    <div class="min-h-full flex flex-col">
-      <header class="py-4 border-b-[1px] border-[#DFEAF2]">
+      <header class="py-4 border-b-[1px] border-[#DFEAF2] bg-white">
          <div class="mx-auto max-w-[1270px] px-4 flex items-center justify-between">
             <div class="flex items-center gap-8">
                <a href="home" class="text-[24px] font-semibold">STORE</a>
                <nav>
-                  <ul id="menu" class="z-40 flex items-center gap-6 text-[15px] font-medium max-[796px]:fixed max-[796px]:top-0 max-[796px]:flex-col max-[796px]:bg-white max-[796px]:w-full max-[796px]:h-[100vh] max-[796px]:justify-center max-[796px]:text-[21px] max-[796px]:left-[-100%] max-[796px]:transition-[left] max-[796px]:duration-500">
-                     <li><a href="" class="text-[#828282] hover:text-black transition-colors duration-200 py-2">Suits</a></li>
+                  <ul id="menu" class="z-40 flex items-center gap-6 text-[15px] font-medium max-[880px]:fixed max-[880px]:top-0 max-[880px]:flex-col max-[880px]:bg-white max-[880px]:w-full max-[880px]:h-[100vh] max-[880px]:justify-center max-[880px]:text-[21px] max-[880px]:left-[-100%] max-[880px]:transition-[left] max-[880px]:duration-500">
+                     <li><a href="overview" class="text-[#828282] hover:text-black transition-colors duration-200 py-2">Suits</a></li>
                      <li><a href="" class="text-[#828282] hover:text-black transition-colors duration-200 py-2">Glasses</a></li>
                      <li><a href="" class="text-[#828282] hover:text-black transition-colors duration-200 py-2">Watches</a></li>
                   </ul>
@@ -27,7 +27,7 @@
                   <span class="text-white text-[14px]">0</span>
                </button>
                <a href="overview" class="text-[#828282] text-[15px] font-medium hover:text-black transition-colors duration-200 py-2">Sign In</a>
-               <button id="menu-button" class="z-50 group relative w-[28px] h-[16px] hidden max-[796px]:block ">
+               <button id="menu-button" class="z-50 group relative w-[28px] h-[16px] hidden max-[880px]:block ">
                   <span class="absolute h-[2px] w-full rounded-full left-0 top-0 bg-black group-[.menu-active]:rotate-[-45deg] group-[.menu-active]:translate-y-[6px] transition-all duration-300"></span>
                   <span class="absolute h-[2px] w-full rounded-full left-0 top-[7px] bg-black group-[.menu-active]:w-0 transition-all duration-300"></span>
                   <span class="absolute h-[2px] w-full rounded-full left-0 bottom-0 bg-black group-[.menu-active]:rotate-[45deg] group-[.menu-active]:translate-y-[-8px] transition-all duration-300"></span>
@@ -35,5 +35,5 @@
             </div>
          </div>
       </header>
-      <main style="flex: 1 1 auto;">
+      <main style="flex: 1 1 auto;" class="mt-10">
          <div class="mx-auto max-w-[1270px] px-4">

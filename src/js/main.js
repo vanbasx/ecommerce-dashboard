@@ -5,8 +5,8 @@ function menuOpen() {
 
    btn.addEventListener('click', ()=> {
       btn.classList.toggle('menu-active');
-      menu.classList.toggle('max-[796px]:left-[-100%]');
-      menu.classList.toggle('max-[796px]:left-0');
+      menu.classList.toggle('max-[880px]:left-[-100%]');
+      menu.classList.toggle('max-[880px]:left-0');
       body.classList.toggle('overflow-hidden');
    })
 }
