@@ -9,7 +9,4 @@
 </head>
 <body style="font-family: 'Poppins', sans-serif;">
    <header></header>
-   <main></main>
-   <footer></footer>
-</body>
-</html>
+   <main>
