@@ -2,8 +2,10 @@
 
 namespace App\Controllers;
 
-class OverviewController {
+use App\Kernel\Controller\Controller;
+
+class OverviewController extends Controller {
    public function index() {
-      include_once ROOT . '/views/pages/overview.php';
+      $this->view('overview');
    }
 }
