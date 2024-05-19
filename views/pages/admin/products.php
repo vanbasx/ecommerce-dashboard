@@ -10,7 +10,7 @@ $link = "/ecommerce-dashboard/public/admin/products/add";
 include_once ROOT . '/views/includes/titles/title-add.php';
 ?>
 
-<div class="my-6">
+<div class="mb-6">
    <?php
    include_once ROOT . '/views/includes/search-bar.php';
    ?>
