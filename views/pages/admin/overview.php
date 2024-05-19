@@ -3,10 +3,11 @@ $page_title = "Overview";
 include_once ROOT . '/views/includes/headers/dashboard-header.php';
 ?>
 
-<div class="border-b-[1px] border-[#DFEAF2] pb-6">
-   <h1 class="text-[32px] font-semibold">Dashboard</h1>
-   <p class="text-[14px] text-[#828282] font-medium">Overview of your store</p>
-</div>
+<?php
+$title = "Dashboard";
+$sub_title = "Overview of your store";
+include_once ROOT . '/views/includes/titles/title-nobtn.php';
+?>
 
 <div class="my-6">
    <?php

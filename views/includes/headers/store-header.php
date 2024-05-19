@@ -12,10 +12,10 @@
       <header class="py-4 border-b-[1px] border-[#DFEAF2] bg-white">
          <div class="mx-auto max-w-[1270px] px-4 flex items-center justify-between">
             <div class="flex items-center gap-8">
-               <a href="home" class="text-[24px] font-semibold">STORE</a>
+               <a href="/ecommerce-dashboard/public/home" class="text-[24px] font-semibold">STORE</a>
                <nav>
                   <ul id="menu" class="z-40 flex items-center gap-6 text-[15px] font-medium max-[880px]:fixed max-[880px]:top-0 max-[880px]:flex-col max-[880px]:bg-white max-[880px]:w-full max-[880px]:h-[100vh] max-[880px]:justify-center max-[880px]:text-[21px] max-[880px]:left-[-100%] max-[880px]:transition-[left] max-[880px]:duration-500">
-                     <li><a href="overview" class="text-[#828282] hover:text-black transition-colors duration-200 py-2">Suits</a></li>
+                     <li><a href="/ecommerce-dashboard/public/admin/overview" class="text-[#828282] hover:text-black transition-colors duration-200 py-2">Suits</a></li>
                      <li><a href="" class="text-[#828282] hover:text-black transition-colors duration-200 py-2">Glasses</a></li>
                      <li><a href="" class="text-[#828282] hover:text-black transition-colors duration-200 py-2">Watches</a></li>
                   </ul>

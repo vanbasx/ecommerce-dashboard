@@ -6,6 +6,6 @@
       </div>
    </footer>
    </div>
-   <script src="assets/js/main.js"></script>
+   <script src="/ecommerce-dashboard/public/assets/js/main.js"></script>
 </body>
 </html>
