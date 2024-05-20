@@ -27,9 +27,17 @@
                </nav>
             </div>
             <div class="flex gap-4 items-center">
-               <button type="button" class="">
-                  <img src="/ecommerce-dashboard/public/assets/img/user.jpg" alt="" class="h-10 w-10 object-cover rounded-full border-[1px] border-[#DFEAF2]">
-               </button>
+               <div class="flex relative">
+                  <button type="button" id="profile-btn">
+                     <img src="/ecommerce-dashboard/public/assets/img/user.jpg" alt="" class="h-10 w-10 object-cover rounded-full border-[1px] border-[#DFEAF2]">
+                  </button>
+                  <div id="profile-menu" class="flex flex-col gap-2 p-4 rounded-[8px] border-[1px] border-[#DFEAF2] shadow-lg absolute bg-white w-[115px] top-[44px] right-0 scale-0 transition-all duration-200">
+                     <a href="/ecommerce-dashboard/public/admin/profile" class="text-[15px] text-[#828282] font-medium hover:text-black transition-color duration-200">Your profile</a>
+                     <form action="#">
+                        <button type="button" class="text-left text-[15px] text-[#828282] font-medium hover:text-black transition-color duration-200">Sign out</button>
+                     </form>
+                  </div>
+               </div>
                <button id="menu-button" class="z-50 group relative w-[28px] h-[16px] hidden max-[880px]:block ">
                   <span class="absolute h-[2px] w-full rounded-full left-0 top-0 bg-black group-[.menu-active]:rotate-[-45deg] group-[.menu-active]:translate-y-[6px] transition-all duration-300"></span>
                   <span class="absolute h-[2px] w-full rounded-full left-0 top-[7px] bg-black group-[.menu-active]:w-0 transition-all duration-300"></span>

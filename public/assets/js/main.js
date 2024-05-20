@@ -12,3 +12,15 @@ function menuOpen() {
 }
 
 menuOpen();
+
+
+function profileOpen() {
+   const btn = document.querySelector('#profile-btn');
+   const menu = document.querySelector('#profile-menu');
+
+   btn.addEventListener('click', ()=> {
+      menu.classList.toggle('scale-0');
+   })
+}
+
+profileOpen();
