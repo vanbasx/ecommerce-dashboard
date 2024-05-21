@@ -18,9 +18,22 @@ function profileOpen() {
    const btn = document.querySelector('#profile-btn');
    const menu = document.querySelector('#profile-menu');
 
-   btn.addEventListener('click', ()=> {
+   const toggleMenu = () => {
       menu.classList.toggle('scale-0');
-   })
+   };
+
+   const closeMenuOnClickOutside = (event) => {
+      if (!menu.contains(event.target) && event.target !== btn) {
+         menu.classList.add('scale-0');
+      }
+   };
+
+   btn.addEventListener('click', (event) => {
+      event.stopPropagation();
+      toggleMenu();
+   });
+
+   document.addEventListener('click', closeMenuOnClickOutside);
 }
 
 profileOpen();

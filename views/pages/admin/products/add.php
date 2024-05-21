@@ -22,9 +22,17 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
          </div>
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
             <label for="category" class="text-[14px] font-medium">Category</label>
-            <select name="" id="" class="relative appearance-none px-4 py-3 bg-white border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium outline-blue-500">
-               
-            </select>
+            <div class="relative">
+               <button type="button" class="relative w-full h-[48.5px] px-4 py-3 bg-white border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] text-left font-medium outline-blue-500">
+                  <p></p>
+                  <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
+               </button>
+               <div class="absolute bg-white w-full mt-2 shadow-lg py-[10px] px-3 border-[1px] border-[#DFEAF2] rounded-[8px] flex flex-col gap-1">
+                  <button type="button" class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Suits</button>
+                  <button type="button" class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Whatches</button>
+                  <button type="button" class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Glasses</button>
+               </div>
+            </div>
          </div>
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
             <label for="category" class="text-[14px] font-medium">Size</label>
@@ -57,7 +65,7 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
    </form>
 </div>
 
-
 <?php
 include_once ROOT . '/views/includes/footer.php';
 ?>
+
