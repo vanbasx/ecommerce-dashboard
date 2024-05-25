@@ -12,4 +12,10 @@ class ProductsController extends Controller {
    public function add() {
       $this->view('admin/products/add');
    }
+
+   public function store() {
+      dd($_POST['name']);
+
+      dd('store');
+   }
 }
