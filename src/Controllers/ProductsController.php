@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Kernel\Controller\Controller;
+use App\Kernel\Validator\Validator;
 
 class ProductsController extends Controller {
    public function index() {
@@ -14,8 +15,14 @@ class ProductsController extends Controller {
    }
 
    public function store() {
-      dd($_POST);
+      $validation = $this->request()->validate([
+         'name' => ['required', 'min:3', 'max:50'],
+      ]);
 
-      dd('store');
+      if (! $validation) {
+         dd('Validation failed', $this->request()->errors());
+      }
+
+      dd('Validation passed');
    }
 }
