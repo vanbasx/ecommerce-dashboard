@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Kernel\Controller\Controller;
-use App\Kernel\Validator\Validator;
 
 class ProductsController extends Controller {
    public function index() {
@@ -20,7 +19,7 @@ class ProductsController extends Controller {
       ]);
 
       if (! $validation) {
-         dd('Validation failed', $this->request()->errors());
+         $this->redirect('/ecommerce-dashboard/public/admin/products/add');
       }
 
       dd('Validation passed');
