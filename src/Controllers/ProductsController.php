@@ -14,7 +14,7 @@ class ProductsController extends Controller {
    }
 
    public function store() {
-      dd($_POST['name']);
+      dd($_POST);
 
       dd('store');
    }

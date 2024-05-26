@@ -20,7 +20,7 @@ class Container {
 
       $this->request = Request::createFormGlobals();
       $this->view = new View();
-      $this->router = new Router($this->view);
+      $this->router = new Router($this->view, $this->request);
 
    }
 }
