@@ -2,7 +2,14 @@
 
 namespace App\Kernel\View;
 
+use App\Kernel\Session\Session;
+
 class View {
+
+   public function __construct(
+      private Session $session
+   ) {}
+
    public function page(string $name) {
 
       $viewPath = ROOT . "/views/pages/$name.php";
@@ -11,10 +18,15 @@ class View {
          throw new \Exception("View $name not found.");
       }
 
-      extract([
-         'view' => $this
-      ]);
+      extract($this->defaultData());
 
       include_once ROOT . "/views/pages/$name.php";
+   }
+
+   private function defaultData() {
+      return [
+         'view' => $this,
+         'session' => $this->session
+      ];
    }
 }

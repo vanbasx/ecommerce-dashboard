@@ -14,13 +14,16 @@ class ProductsController extends Controller {
    }
 
    public function store() {
-      // dd($this->session());
 
       $validation = $this->request()->validate([
          'name' => ['required', 'min:3', 'max:50'],
       ]);
 
       if (! $validation) {
+         foreach ($this->request()->errors() as $field => $errors) {
+            $this->session()->set($field, $errors);
+         }
+         
          $this->redirect('/ecommerce-dashboard/public/admin/products/add');
       }
 

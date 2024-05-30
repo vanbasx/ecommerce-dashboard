@@ -1,4 +1,13 @@
 <?php
+
+/**
+ * @var \App\Kernel\Session\Session $session
+ */
+
+?>
+
+
+<?php
 $page_title = "Add Product";
 include_once ROOT . '/views/includes/headers/dashboard-header.php';
 ?>
@@ -15,6 +24,13 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
             <label for="name" class="text-[14px] font-medium">Name</label>
             <input type="text" name="name" id="name" class="px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium placeholder:text-[#828282] outline-blue-500" placeholder="Enter product name">
+            <?php if ($session->has('name')) { ?>
+            <ul>
+               <?php foreach($session->getFlash('name') as $error) { ?>
+                  <li class="text-red-500 font-meduim"><?= $error ?></li>
+               <?php } ?>
+            </ul>
+            <?php } ?>
          </div>
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
             <label for="price" class="text-[14px] font-medium">Price</label>
