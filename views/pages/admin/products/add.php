@@ -1,11 +1,8 @@
 <?php
-
 /**
  * @var \App\Kernel\Session\Session $session
  */
-
 ?>
-
 
 <?php
 $page_title = "Add Product";
@@ -21,21 +18,31 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
 <div class="mb-6">
    <form action="/ecommerce-dashboard/public/admin/products/add" method="post">
       <div class="grid gap-x-5 gap-y-4 grid-cols-3 items-center max-w-[925px] mb-6 max-[900px]:grid-cols-2 max-[500px]:grid-cols-1">
+
+         <!-- INPUT -->
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
-            <label for="name" class="text-[14px] font-medium">Name</label>
-            <input type="text" name="name" id="name" class="px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium placeholder:text-[#828282] outline-blue-500" placeholder="Enter product name">
-            <?php if ($session->has('name')) { ?>
-            <ul>
-               <?php foreach($session->getFlash('name') as $error) { ?>
-                  <li class="text-red-500 font-meduim"><?= $error ?></li>
+            <div class="flex items-center justify-between">
+               <label for="name" class="text-[14px] font-medium">Name</label>
+               <?php if ($session->has('name')) { ?>
+               <span class="text-[#EE0000] text-[13px] font-medium"><?= $session->getFlash('name')[0] ?></span>
                <?php } ?>
-            </ul>
-            <?php } ?>
+            </div>
+            <input type="text" name="name" id="name" class="px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium placeholder:text-[#828282] outline-blue-500" placeholder="Enter product name">
          </div>
+         <!-- /INPUT -->
+         
+         <!-- INPUT -->
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
-            <label for="price" class="text-[14px] font-medium">Price</label>
+            <div class="flex items-center justify-between">
+               <label for="price" class="text-[14px] font-medium">Price</label>
+               <?php if ($session->has('price')) { ?>
+               <span class="text-[#EE0000] text-[13px] font-medium"><?= $session->getFlash('price')[0] ?></span>
+               <?php } ?>
+            </div>
             <input type="text" name="price" id="price" class="px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium placeholder:text-[#828282] outline-blue-500" placeholder="Enter product price">
          </div>
+         <!-- /INPUT -->
+
          <!-- DROPDOWN -->
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
             <label for="category" class="text-[14px] font-medium">Category</label>
@@ -72,7 +79,7 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
 
          <!-- DROPDOWN -->
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
-            <label for="colors" class="text-[14px] font-medium">Colors</label>
+            <label for="colors" class="text-[14px] font-medium">Color</label>
             <div class="dropdown-js relative">
                <button type="button" class="select-js relative w-full h-[48.5px] px-4 py-3 bg-white border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] text-left font-medium outline-blue-500">
                   <span class="selected-js"></span>
@@ -86,6 +93,8 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
             </div>
          </div>
          <!-- /DROPDOWN -->
+
+         <!-- CHECKBOX -->
          <div class="p-4 bg-white border-[1px] border-[#DFEAF2] rounded-[8px] max-[900px]:max-w-full">
             <div class="pb-1 flex items-center gap-2">
                <input type="checkbox" name="featured" id="featured" class="w-[15px] h-[15px]">
@@ -93,6 +102,9 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
             </div>
             <p class="text-[14px] text-[#828282] font- px-[24px]">This product will appear on the home page.</p>
          </div>
+         <!-- /CHECKBOX -->
+
+         <!-- CHECKBOX -->
          <div class="p-4 bg-white border-[1px] border-[#DFEAF2] rounded-[8px] max-[900px]:max-w-full">
             <div class="pb-1 flex items-center gap-2">
                <input type="checkbox" name="archived" id="archived" class="w-[15px] h-[15px]">
@@ -100,6 +112,8 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
             </div>
             <p class="text-[14px] text-[#828282] font- px-[24px]">This product will not appear anywhere in the store.</p>
          </div>
+         <!-- /CHECKBOX -->
+
       </div>
       <button type="submit" class="py-[10px] px-8 rounded-[8px] bg-black text-white text-[15px] font-medium max-[500px]:w-full hover:bg-[#1D1D1D] transition-colors duration-200">Create</button>
    </form>

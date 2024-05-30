@@ -47,17 +47,17 @@ class Validator {
                 break;
             case 'min':
                 if (strlen($value) < $ruleValue) {
-                    return "Field $key must be at least $ruleValue characters long";
+                    return "Enter more $ruleValue characters";
                 }
                 break;
             case 'max':
                 if (strlen($value) > $ruleValue) {
-                    return "Field $key must be at most $ruleValue characters long";
+                    return "Enter less $ruleValue characters";
                 }
                 break;
             case 'email':
                 if (! filter_var($value, FILTER_VALIDATE_EMAIL)) {
-                    return "Field $key must be a valid email address";
+                    return "Enter a valid email address";
                 }
                 break;
         }
