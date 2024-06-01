@@ -46,16 +46,14 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
          <!-- DROPDOWN -->
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
             <label for="category" class="text-[14px] font-medium">Category</label>
-            <div class="dropdown-js relative">
-               <button type="button" class="select-js relative w-full h-[48.5px] px-4 py-3 bg-white border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] text-left font-medium outline-blue-500">
-                  <span class="selected-js"></span>
-                  <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
-               </button>
-               <ul class="select-menu-js absolute bg-white w-full mt-2 shadow-lg py-[10px] px-3 border-[1px] border-[#DFEAF2] rounded-[8px] flex flex-col gap-1 scale-0 transition-all duration-200 z-[1]">
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Suits</li>
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Glasses</li>
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Whatches </li>
-               </ul>
+            <div class="relative">
+               <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
+               <select name="category" id="category" class="appearance-none px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium outline-blue-500 w-full">
+                  <option selected disabled>Choose a category</option>
+                  <option value="">Suits</option>
+                  <option value="">Glasses</option>
+                  <option value="">Watches</option>
+               </select>
             </div>
          </div>
          <!-- /DROPDOWN -->
@@ -63,33 +61,29 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
          <!-- DROPDOWN -->
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
             <label for="size" class="text-[14px] font-medium">Size</label>
-            <div class="dropdown-js relative">
-               <button type="button" class="select-js relative w-full h-[48.5px] px-4 py-3 bg-white border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] text-left font-medium outline-blue-500">
-                  <span class="selected-js"></span>
-                  <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
-               </button>
-               <ul class="select-menu-js absolute bg-white w-full mt-2 shadow-lg py-[10px] px-3 border-[1px] border-[#DFEAF2] rounded-[8px] flex flex-col gap-1 scale-0 transition-all duration-200 z-[1]">
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Small</li>
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Medium</li>
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Large</li>
-               </ul>
+            <div class="relative">
+               <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
+               <select name="size" id="size" class="appearance-none px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium outline-blue-500 w-full">
+                  <option selected disabled>Choose a size</option>
+                  <option value="">Small</option>
+                  <option value="">Medium</option>
+                  <option value="">Large</option>
+               </select>
             </div>
          </div>
          <!-- /DROPDOWN -->
 
          <!-- DROPDOWN -->
          <div class="flex flex-col max-w-[295px] gap-2 max-[900px]:max-w-full">
-            <label for="colors" class="text-[14px] font-medium">Color</label>
-            <div class="dropdown-js relative">
-               <button type="button" class="select-js relative w-full h-[48.5px] px-4 py-3 bg-white border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] text-left font-medium outline-blue-500">
-                  <span class="selected-js"></span>
-                  <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
-               </button>
-               <ul class="select-menu-js absolute bg-white w-full mt-2 shadow-lg py-[10px] px-3 border-[1px] border-[#DFEAF2] rounded-[8px] flex flex-col gap-1 scale-0 transition-all duration-200 z-[1]">
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Black</li>
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Blue</li>
-                  <li class="text-left py-[6px] px-2 text-[14px] font-medium cursor-pointer rounded-[4px] hover:bg-[#DFEAF2] transition-colors duration-200">Gray</li>
-               </ul>
+            <label for="color" class="text-[14px] font-medium">Color</label>
+            <div class="relative">
+               <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
+               <select name="color" id="color" class="appearance-none px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium outline-blue-500 w-full">
+                  <option selected disabled>Choose a color</option>
+                  <option value="">White</option>
+                  <option value="">Black</option>
+                  <option value="">Gray</option>
+               </select>
             </div>
          </div>
          <!-- /DROPDOWN -->
@@ -115,7 +109,7 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
          <!-- /CHECKBOX -->
 
       </div>
-      <button type="submit" class="py-[10px] px-8 rounded-[8px] bg-black text-white text-[15px] font-medium max-[500px]:w-full hover:bg-[#1D1D1D] transition-colors duration-200">Create</button>
+      <button type="clear" class="py-[10px] px-8 rounded-[8px] bg-black text-white text-[15px] font-medium max-[500px]:w-full hover:bg-[#1D1D1D] transition-colors duration-200">Create</button>
    </form>
 </div>
 

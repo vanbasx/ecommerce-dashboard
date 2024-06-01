@@ -18,9 +18,6 @@ class ProductsController extends Controller {
       $validation = $this->request()->validate([
          'name' => ['required', 'min:3', 'max:50'],
          'price' => ['required', 'min:1', 'max:5'],
-         'category' => ['required'],
-         'size' => ['required'],
-         'color' => ['required'],
       ]);
 
       if (! $validation) {
