@@ -17,6 +17,13 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
 
 <div class="mb-6">
    <form action="/ecommerce-dashboard/public/admin/products/add" method="post">
+      <!-- IMAGE UPLOAD -->
+      <div class="">
+         <label for="" class="text-[14px] font-medium">Background image</label>
+         
+      </div>
+      <!-- /IMAGE UPLOAD -->
+
       <div class="grid gap-x-5 gap-y-4 grid-cols-3 items-center max-w-[925px] mb-6 max-[900px]:grid-cols-2 max-[500px]:grid-cols-1">
 
          <!-- INPUT -->
@@ -49,7 +56,7 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
             <div class="relative">
                <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
                <select name="category" id="category" class="appearance-none px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium outline-blue-500 w-full">
-                  <option selected disabled>Choose a category</option>
+                  <option selected disabled></option>
                   <option value="">Suits</option>
                   <option value="">Glasses</option>
                   <option value="">Watches</option>
@@ -64,7 +71,7 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
             <div class="relative">
                <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
                <select name="size" id="size" class="appearance-none px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium outline-blue-500 w-full">
-                  <option selected disabled>Choose a size</option>
+                  <option selected disabled></option>
                   <option value="">Small</option>
                   <option value="">Medium</option>
                   <option value="">Large</option>
@@ -79,7 +86,7 @@ include_once ROOT . '/views/includes/titles/title-nobtn.php';
             <div class="relative">
                <svg class="absolute right-4 top-[21px]" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="#828282" stroke-width="1.5" stroke-linecap="round"/></svg>
                <select name="color" id="color" class="appearance-none px-4 py-3 border-[1px] border-[#DFEAF2] rounded-[8px] text-[15px] font-medium outline-blue-500 w-full">
-                  <option selected disabled>Choose a color</option>
+                  <option selected disabled></option>
                   <option value="">White</option>
                   <option value="">Black</option>
                   <option value="">Gray</option>
